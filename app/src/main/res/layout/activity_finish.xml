@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.Finish"
+    android:gravity="center"
+    android:orientation="vertical">
+    <ImageView
+        android:layout_marginTop="120dp"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/word"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Game Ended"
+        android:textSize="35dp"
+        android:textColor="@color/black"
+        android:padding="25dp"
+        />
+    <Space
+        android:layout_width="100dp"
+        android:layout_height="100dp"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/menu"
+            android:layout_width="120dp"
+            style="@style/Button.Next"
+            android:layout_marginBottom="150dp"
+            android:text="Menu"
+            android:textSize="18dp"
+            android:layout_height="80dp"/>
+        <Space
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/finish"
+            android:layout_width="120dp"
+            style="@style/Button.Next"
+            android:layout_marginBottom="140dp"
+            android:text="Restart"
+            android:textSize="18dp"
+            android:layout_height="80dp"/>
+    </LinearLayout>
+    
+</LinearLayout>

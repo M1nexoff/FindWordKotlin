@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".presentation.main.MainActivity">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/level"
+            android:layout_gravity="center"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:textSize="22dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:background="@drawable/stars" />
+
+        <TextView
+            android:id="@+id/money"
+            android:layout_gravity="end|center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Score: 0"
+            android:layout_marginEnd="8dp"
+            android:textSize="20dp"
+            android:textColor="@android:color/black" />
+
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:background="@drawable/background_img"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/imgQuestion1"
+                    android:layout_width="95dp"
+                    android:layout_height="95dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:background="@drawable/background_img"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/imgQuestion2"
+                    android:layout_width="95dp"
+                    android:layout_height="95dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_weight="1"
+            android:gravity="center">
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:background="@drawable/background_img"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/imgQuestion3"
+                    android:layout_width="95dp"
+                    android:layout_height="95dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:background="@drawable/background_img"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/imgQuestion4"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/linerAnswers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatButton style="@style/Button.Answer" />
+
+            <androidx.appcompat.widget.AppCompatButton style="@style/Button.Answer" />
+
+            <androidx.appcompat.widget.AppCompatButton style="@style/Button.Answer" />
+
+            <androidx.appcompat.widget.AppCompatButton style="@style/Button.Answer" />
+
+            <androidx.appcompat.widget.AppCompatButton style="@style/Button.Answer" />
+
+            <androidx.appcompat.widget.AppCompatButton style="@style/Button.Answer" />
+
+            <androidx.appcompat.widget.AppCompatButton style="@style/Button.Answer" />
+
+            <androidx.appcompat.widget.AppCompatButton style="@style/Button.Answer" />
+
+        </LinearLayout>
+        =
+
+        <LinearLayout
+            android:id="@+id/linerVariant1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatButton style="@style/Button.Variant" />
+
+            <androidx.appcompat.widget.AppCompatButton style="@style/Button.Variant" />
+
+            <androidx.appcompat.widget.AppCompatButton style="@style/Button.Variant" />
+
+            <androidx.appcompat.widget.AppCompatButton style="@style/Button.Variant" />
+
+            <androidx.appcompat.widget.AppCompatButton style="@style/Button.Variant" />
+
+            <androidx.appcompat.widget.AppCompatButton style="@style/Button.Variant" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linerVariant2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatButton style="@style/Button.Variant" />
+
+            <androidx.appcompat.widget.AppCompatButton style="@style/Button.Variant" />
+
+            <androidx.appcompat.widget.AppCompatButton style="@style/Button.Variant" />
+
+            <androidx.appcompat.widget.AppCompatButton style="@style/Button.Variant" />
+
+            <androidx.appcompat.widget.AppCompatButton style="@style/Button.Variant" />
+
+            <androidx.appcompat.widget.AppCompatButton style="@style/Button.Variant" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+            <ImageView
+                android:id="@+id/back"
+                android:src="@drawable/back"
+                android:padding="8dp"
+                android:layout_width="70dp"
+                android:layout_height="45dp"
+                android:background="@drawable/bg_back"/>
+            <Space
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"/>
+            <ImageView
+                android:id="@+id/restart"
+                android:layout_width="70dp"
+                android:src="@drawable/refresh"
+                android:padding="10dp"
+                android:layout_height="45dp"
+                style="@style/Button.Answer"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

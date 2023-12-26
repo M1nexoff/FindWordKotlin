@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#13BC16"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Find Word"
+                android:textSize="25dp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:id="@+id/money"
+                android:layout_gravity="end|center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Score: 0"
+                android:textSize="20dp"
+                android:textColor="@color/white"
+                android:layout_marginEnd="8dp"/>
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="#F2F2F2"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/level"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@drawable/stars"
+                android:text="1"
+                android:gravity="center"
+                android:textSize="22dp"
+                android:textStyle="bold"/>
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/word"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:background="@drawable/simple_button"
+                android:id="@+id/newButton"
+                android:layout_width="150dp"
+                android:layout_height="70dp"
+                android:text="New Game"
+                android:textSize="18sp"
+                android:textColor="#FFFFFF"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/loadButton"
+                android:layout_width="150dp"
+                android:layout_height="70dp"
+                android:text="Load Game"
+                android:textSize="18sp"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/simple_button"
+                android:layout_below="@id/exitButton"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/exitButton"
+                android:layout_width="150dp"
+                android:layout_height="70dp"
+                android:text="Exit"
+                android:textSize="18sp"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/simple_button"
+                android:layout_marginTop="20dp"/>
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"/>
+        </LinearLayout>
+
+    </FrameLayout>
+
+</LinearLayout>
