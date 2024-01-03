@@ -66,7 +66,7 @@ class MainPresenter : MainContract.Presenter {
 
         if (userAnswers.toString() != correctAnswer) {
             view!!.showResult("Incorrect!")
-            money -= 10
+            money -= 5
             view!!.setMoney(money)
             return
         }

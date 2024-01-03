@@ -17,8 +17,8 @@ class StartActivity : AppCompatActivity(), StartContract.View {
     private var exitButton: AppCompatButton? = null
     private var newGame: AppCompatButton? = null
     private var presenter: StartContract.Presenter? = null
-    private lateinit var money : TextView
-    private lateinit var level : TextView
+    private lateinit var money: TextView
+    private lateinit var level: TextView
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_start)
@@ -30,7 +30,7 @@ class StartActivity : AppCompatActivity(), StartContract.View {
         money = findViewById(R.id.money)
         money.text = "Score: ${presenter!!.getMoney()}"
         level = findViewById(R.id.level)
-        level.text= presenter!!.getLevel().toString()
+        level.text = presenter!!.getLevel().toString()
         playButton = findViewById<View>(R.id.loadButton) as AppCompatButton
         exitButton = findViewById<View>(R.id.exitButton) as AppCompatButton
         newGame = findViewById<View>(R.id.newButton) as AppCompatButton
@@ -63,7 +63,7 @@ class StartActivity : AppCompatActivity(), StartContract.View {
 
     override fun onResume() {
         money.text = "Score: ${presenter!!.getMoney()}"
-        level.text= (presenter!!.getLevel()+1).toString()
+        level.text = (presenter!!.getLevel() + 1).toString()
         super.onResume()
     }
 }
